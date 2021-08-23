@@ -21,6 +21,8 @@ option(USEPCRE "use PCRE in tests and benchmarks" OFF)
 # so we provide an option similar to BUILD_TESTING, but just for RE2.
 option(RE2_BUILD_TESTING "enable testing for RE2" OFF)
 
+set(LIB_RE2_DIR ${CMAKE_CURRENT_SOURCE_DIR} CACHE INTERNAL "re2 library path" FORCE)
+
 # ABI version
 # http://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html
 set(SONAME 9)
